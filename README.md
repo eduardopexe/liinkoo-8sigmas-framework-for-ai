@@ -6,6 +6,12 @@
 
 Reusable operational framework for AI-assisted execution, governance, contextual intelligence and continuous delivery.
 
+Designed to transform AI from a conversational assistant into a repeatable, evidence-driven operational system.
+
+**Website:** https://liinkoo.com
+
+**Documentation:** EXAMPLE.md
+
 ---
 
 ## Purpose
@@ -341,6 +347,18 @@ Reusable knowledge
 
 ---
 
+## Learn by Example
+
+For a complete end-to-end execution example, see:
+
+```text
+EXAMPLE.md
+```
+
+The example demonstrates how planning, execution, validation, documentation and memory updates work together inside a complete execution cycle.
+
+---
+
 ## Runtime Modes
 
 ### Supervised Mode
@@ -441,8 +459,31 @@ autocomplete
 into:
 
 ```text
+execution assistant
+```
+
+and ultimately into:
+
+```text
 operational system
 ```
+
+---
+
+## Typical Use Cases
+
+The framework is primarily designed for:
+
+* AI-assisted software development
+* Data engineering pipelines
+* Infrastructure automation
+* Network automation
+* Operational intelligence platforms
+* Documentation-driven projects
+* Product development initiatives
+* Long-running AI execution workflows
+
+The framework is intentionally domain-agnostic and can be adapted to different industries, technologies and execution models.
 
 ---
 
@@ -460,26 +501,16 @@ for details.
 
 ---
 
-## Author
-
-Eduardo Pexe
-
-GitHub:
-https://github.com/eduardopexe
-
-LinkedIn:
-https://www.linkedin.com/in/eduardopexe
-
----
-
 ## Project Status
 
 Current Status:
 
 ```text
-v0.1.0
+v1.1.0
 Initial Open Source Release
 ```
+
+This repository contains the public version of the Liinkoo 8 Sigmas Framework.
 
 The framework is under active validation through real-world projects involving:
 
@@ -490,3 +521,23 @@ The framework is under active validation through real-world projects involving:
 * observability platforms
 
 Contributions, feedback and improvements are welcome.
+
+---
+
+## Contact
+
+**Website**
+
+https://liinkoo.com
+
+**Email**
+
+[framework@liinkoo.com](mailto:framework@liinkoo.com)
+
+**GitHub**
+
+https://github.com/eduardopexe/liinkoo-8sigmas-framework-for-ai
+
+---
+
+Maintained by the Liinkoo community and contributors.
