@@ -1,30 +1,88 @@
-# Liinkoo 8 Sigmas Framework for AI v1
+<p align="center">
+  <img src="assets/logo-icon.png" width="180">
+</p>
+
+# Liinkoo 8 Sigmas Framework for AI
+
+Reusable operational framework for AI-assisted execution, governance, contextual intelligence and continuous delivery.
+
+---
 
 ## Purpose
 
-Liinkoo 8 Sigmas is a reusable operational framework for AI-assisted execution, governance, contextual intelligence and continuous delivery.
+Liinkoo 8 Sigmas is a reusable operational framework designed to transform AI from a conversational assistant into an operational execution system.
+
+The framework provides a structured approach for:
+
+* AI-assisted software development
+* Data engineering initiatives
+* Infrastructure and automation projects
+* Operational intelligence platforms
+* Long-running AI execution workflows
+* Continuous improvement programs
 
 This version was redesigned to:
 
-- reduce agent explosion
-- reduce documentation sprawl
-- separate framework from project-specific context
-- support any software/data/AI project
-- preserve deterministic and evidence-driven execution
+* reduce agent explosion
+* reduce documentation sprawl
+* separate framework from project-specific context
+* support any software, data or AI initiative
+* preserve deterministic and evidence-driven execution
 
 ---
 
-# Core Philosophy
+## Core Philosophy
 
-- Memory over prompts
-- Evidence over assumptions
-- Systems over improvisation
-- Delivery over demos
-- Stop on uncertainty
+The framework is built on five fundamental principles:
+
+### Memory over Prompts
+
+Persistent context is more valuable than increasingly complex prompts.
+
+### Evidence over Assumptions
+
+Decisions should be supported by observable facts.
+
+### Systems over Improvisation
+
+Repeatable processes outperform ad-hoc execution.
+
+### Delivery over Demos
+
+Working outcomes matter more than presentations.
+
+### Stop on Uncertainty
+
+When evidence is insufficient, stop and validate before continuing.
 
 ---
 
-# Architecture Model
+## Who Is This For?
+
+This framework is designed for:
+
+* Software engineers
+* AI-assisted development teams
+* Data engineering teams
+* Platform engineering teams
+* Infrastructure and automation specialists
+* Product development initiatives
+* Operational intelligence platforms
+
+The framework is model-agnostic and can be used with:
+
+* ChatGPT
+* Claude
+* GitHub Copilot
+* Gemini
+* DeepSeek
+* Cursor
+* Windsurf
+* Future AI systems
+
+---
+
+## Architecture Model
 
 ```text
 Framework
@@ -38,37 +96,71 @@ Project Templates
 Project Docs
 ```
 
----
-
-# Directory Structure
+Each layer has a clear responsibility.
 
 ```text
-framework/     -> immutable operational methodology
-lia-core/      -> operational runtime memory and state
-agents/        -> minimal execution agents
-templates/     -> project/domain templates
-docs/           -> project operational documentation
+Framework
+    Operational methodology
+
+LIA Core
+    Runtime state and memory
+
+Agents
+    Execution roles
+
+Templates
+    Project-specific overlays
+
+Project Docs
+    Operational artifacts
 ```
 
 ---
 
-# Minimal Agent Philosophy
+## Directory Structure
 
-This version intentionally reduces the amount of permanent agents.
+```text
+framework/
+    Immutable operational methodology
 
-Previous versions contained:
+lia-core/
+    Operational memory and runtime state
 
-- planners
-- coders
-- prompt writers
-- QA writers
-- smoke-test writers
-- backlog handoff agents
-- autonomous/supervised variants
+agents/
+    Minimal execution agents
 
-Most behaviors are now consolidated.
+templates/
+    Project and domain templates
 
-Current model:
+docs/
+    Project operational documentation
+```
+
+---
+
+## Minimal Agent Philosophy
+
+Previous versions accumulated many specialized agents:
+
+```text
+planner
+coder
+reviewer
+prompt writer
+documentation writer
+qa writer
+smoke-test writer
+handoff writer
+...
+```
+
+Over time this created:
+
+* governance complexity
+* context duplication
+* operational overhead
+
+The framework now adopts a minimal agent model:
 
 ```text
 agents/
@@ -77,25 +169,51 @@ agents/
 └── reviewer.md
 ```
 
+### Orchestrator
+
+Responsible for:
+
+* planning
+* sequencing
+* execution coordination
+
+### Executor
+
+Responsible for:
+
+* implementation
+* documentation
+* operational work
+
+### Reviewer
+
+Responsible for:
+
+* validation
+* evidence review
+* quality gates
+
 ---
 
-# How To Use
+## Quick Start
 
-## 1. Copy framework
+### Step 1 — Copy the Framework
 
 Copy:
 
-- framework/
-- lia-core/
-- agents/
+```text
+framework/
+lia-core/
+agents/
+```
 
 into your repository.
 
 ---
 
-## 2. Select a template
+### Step 2 — Select a Template
 
-Choose one:
+Choose a template:
 
 ```text
 templates/generic
@@ -103,11 +221,11 @@ templates/liinkoo_ic
 templates/netblue
 ```
 
-Copy template docs into your repository docs folder.
+Copy the selected template into your project documentation structure.
 
 ---
 
-## 3. Initialize memory
+### Step 3 — Initialize Project Memory
 
 Update:
 
@@ -115,16 +233,17 @@ Update:
 docs/memory/project-memory.md
 ```
 
-Add:
+Document:
 
-- active initiatives
-- architecture decisions
-- operational rules
-- lessons learned
+* active initiatives
+* architecture decisions
+* operational rules
+* proven patterns
+* lessons learned
 
 ---
 
-## 4. Start backlog
+### Step 4 — Build the Backlog
 
 Update:
 
@@ -132,18 +251,19 @@ Update:
 docs/backlog/backlog.md
 ```
 
-Add:
+Include:
 
-- epics
-- next safe steps
-- blockers
-- evidence required
+* epics
+* tasks
+* blockers
+* dependencies
+* required evidence
 
 ---
 
-## 5. Start execution
+### Step 5 — Execute the First Cycle
 
-Recommended loop:
+Recommended cycle:
 
 ```text
 Context
@@ -165,74 +285,152 @@ Repeat
 
 ---
 
-# Runtime Modes
+## Example Execution Flow
 
-## Supervised
+A simplified example:
 
-Human-guided.
+```text
+Goal:
+Create a REST API
+```
 
-Best for:
+### Cycle 1
 
-- architecture
-- migrations
-- strategic changes
+```text
+Define architecture
+Create ADR
+Document assumptions
+```
+
+Output:
+
+```text
+ADR approved
+Architecture documented
+```
+
+### Cycle 2
+
+```text
+Implement endpoint
+Create smoke test
+Execute validation
+```
+
+Output:
+
+```text
+Working endpoint
+Evidence captured
+```
+
+### Cycle 3
+
+```text
+Review execution
+Update memory
+Capture lessons learned
+```
+
+Output:
+
+```text
+Updated documentation
+Reusable knowledge
+```
 
 ---
 
-## Autonomous Batch
+## Runtime Modes
 
-High-throughput bounded execution.
+### Supervised Mode
 
-Best for:
+Human-guided execution.
 
-- repetitive work
-- documentation
-- backlog execution
+Recommended for:
+
+* architecture changes
+* migrations
+* strategic decisions
+* high-risk operations
 
 ---
 
-## Blue Camel Runtime
+### Autonomous Batch Mode
+
+Bounded high-throughput execution.
+
+Recommended for:
+
+* repetitive work
+* backlog execution
+* documentation generation
+* operational maintenance
+
+---
+
+### Blue Camel Runtime
 
 Distributed resumable execution.
 
-Best for:
+Recommended for:
 
-- workers
-- collectors
-- large datasets
-- async processing
-
----
-
-# Framework vs Templates
-
-## Framework
-
-Generic reusable operational model.
-
-Never include:
-
-- telecom assumptions
-- SQL assumptions
-- parquet assumptions
-- CNPJ assumptions
-- SNMP assumptions
+* workers
+* collectors
+* large datasets
+* asynchronous processing
+* long-running operations
 
 ---
 
-## Templates
+## Framework vs Templates
 
-Project-specific operational overlays.
+### Framework
+
+Reusable operational methodology.
+
+The framework should never include:
+
+* telecom assumptions
+* SQL assumptions
+* parquet assumptions
+* CNPJ assumptions
+* SNMP assumptions
+* project-specific rules
+
+---
+
+### Templates
+
+Project-specific overlays.
 
 Examples:
 
-- Liinkoo IC
-- NetBlue
-- Future products
+```text
+Liinkoo IC
+NetBlue
+Future products
+Customer projects
+```
+
+Templates adapt the framework to a domain without changing the framework itself.
 
 ---
 
-# Goal
+## Design Goals
+
+The framework aims to provide:
+
+* repeatability
+* governance
+* traceability
+* contextual intelligence
+* operational scalability
+* continuous improvement
+
+---
+
+## Goal
 
 Transform AI from:
 
@@ -245,3 +443,50 @@ into:
 ```text
 operational system
 ```
+
+---
+
+## License
+
+Licensed under the Apache License 2.0.
+
+See:
+
+```text
+LICENSE
+```
+
+for details.
+
+---
+
+## Author
+
+Eduardo Pexe
+
+GitHub:
+https://github.com/eduardopexe
+
+LinkedIn:
+https://www.linkedin.com/in/eduardopexe
+
+---
+
+## Project Status
+
+Current Status:
+
+```text
+v0.1.0
+Initial Open Source Release
+```
+
+The framework is under active validation through real-world projects involving:
+
+* AI-assisted execution
+* network automation
+* operational intelligence
+* large-scale data processing
+* observability platforms
+
+Contributions, feedback and improvements are welcome.
